@@ -41,7 +41,7 @@ const socialLinks = [
 
 export function Sidebar() {
   return (
-    <aside className="w-full lg:w-80 bg-card rounded-2xl shadow-lg p-6 space-y-6">
+    <aside className="w-full lg:w-80 lg:sticky lg:top-6 lg:h-fit bg-card rounded-2xl shadow-lg p-6 space-y-6">
       {/* Profile Section */}
       <div className="flex flex-col items-center text-center">
         <div className="relative">
