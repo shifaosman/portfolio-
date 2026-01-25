@@ -41,7 +41,7 @@ const socialLinks = [
 
 export function Sidebar() {
   return (
-    <aside className="w-full lg:w-80 lg:sticky lg:top-6 lg:h-fit bg-card rounded-2xl shadow-lg p-6 space-y-6">
+    <aside className="w-full lg:w-80 bg-card rounded-2xl shadow-lg p-6 space-y-6">
       {/* Profile Section */}
       <div className="flex flex-col items-center text-center">
         <div className="relative">
@@ -73,6 +73,12 @@ export function Sidebar() {
           </a>
         ))}
       </div>
+
+      {/* Download CV Button - Visible at top without scrolling */}
+      <Button className="w-full rounded-full gap-2" data-testid="button-download-cv">
+        <Download className="w-4 h-4" />
+        Download CV
+      </Button>
 
       {/* Quick Facts */}
       <div className="space-y-3 text-sm border-t border-border pt-4">
@@ -130,12 +136,6 @@ export function Sidebar() {
           ))}
         </ul>
       </div>
-
-      {/* Download CV Button */}
-      <Button className="w-full rounded-full gap-2" data-testid="button-download-cv">
-        <Download className="w-4 h-4" />
-        Download CV
-      </Button>
     </aside>
   );
 }
