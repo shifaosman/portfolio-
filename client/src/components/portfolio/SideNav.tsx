@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { 
   Home, 
   Settings, 
-  DollarSign, 
   MessageSquare, 
   Briefcase, 
   GraduationCap, 
@@ -16,7 +15,6 @@ import { Button } from "@/components/ui/button";
 const navItems = [
   { id: "hero", icon: Home, label: "Home" },
   { id: "services", icon: Settings, label: "My Services" },
-  { id: "pricing", icon: DollarSign, label: "Price Plans" },
   { id: "testimonials", icon: MessageSquare, label: "Recommendations" },
   { id: "work-history", icon: Briefcase, label: "Work History" },
   { id: "education", icon: GraduationCap, label: "Education" },
@@ -67,7 +65,7 @@ export function SideNav() {
                 onClick={() => scrollToSection(item.id)}
                 className={`w-12 h-12 rounded-xl shadow-md ${
                   isActive
-                    ? "bg-gradient-to-br from-primary to-orange-500"
+                    ? "bg-gradient-to-br from-primary to-token-violet shadow-glow-accent"
                     : "bg-card"
                 }`}
                 aria-label={item.label}

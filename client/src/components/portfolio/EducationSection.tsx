@@ -5,11 +5,12 @@ import type { EducationItem } from "@shared/types";
 const education: EducationItem[] = [
   {
     id: "1",
-    institution: "Bachelor's Degree - Software Engineering",
-    subtitle: "Student",
-    dateRange: "Expected Graduation: Jan / Feb 2026",
-    certificate: "Software Engineering",
-    description: "Relevant Coursework: Data Structures & Algorithms, Database Management, Web Development, Software Architecture, Object-Oriented Programming, System Analysis & Design.",
+    institution: "Bachelor's Degree — Computer Science",
+    subtitle: "Somali National University",
+    dateRange: "Graduation: April 2026",
+    certificate: "Computer Science",
+    description:
+      "Relevant coursework: Data Structures & Algorithms, Database Management, Web Development, Software Architecture, Object-Oriented Programming, System Analysis & Design.",
   },
 ];
 

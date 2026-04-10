@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import heroImage from "../../../../shared/images/image.png";
 
 export function HeroSection() {
   return (
@@ -13,7 +14,7 @@ export function HeroSection() {
           <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
             <span className="text-foreground">I'm Shifa Osman Musa</span>
             <br />
-            <span className="bg-gradient-to-r from-primary to-orange-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary to-token-violet bg-clip-text text-transparent">
               MERN Stack
             </span>{" "}
             <span className="text-foreground">Developer</span>
@@ -34,14 +35,16 @@ export function HeroSection() {
           </Button>
         </div>
 
-        {/* Right Column - Photo Placeholder with Decorative Elements */}
+        {/* Right Column - Photo with Decorative Elements */}
         <div className="relative order-1 md:order-2 flex justify-center">
           <div className="relative">
             {/* Main Photo Container */}
             <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-primary/20 to-primary/5 rounded-3xl flex items-center justify-center overflow-hidden shadow-2xl">
-              <span className="text-6xl md:text-7xl font-bold text-primary/30">
-                Photo
-              </span>
+              <img
+                src={heroImage}
+                alt="Shifa Osman Musa portrait"
+                className="w-full h-full object-cover object-center object-[center_30%]"
+              />
             </div>
 
             {/* Decorative Elements */}
@@ -51,7 +54,7 @@ export function HeroSection() {
             
             {/* Floating dots */}
             <div className="absolute top-8 -left-4 w-3 h-3 bg-primary rounded-full" />
-            <div className="absolute bottom-12 -right-2 w-2 h-2 bg-orange-400 rounded-full" />
+            <div className="absolute bottom-12 -right-2 w-2 h-2 bg-token-violet rounded-full" />
             <div className="absolute -top-2 left-1/3 w-2 h-2 bg-primary/50 rounded-full" />
           </div>
         </div>

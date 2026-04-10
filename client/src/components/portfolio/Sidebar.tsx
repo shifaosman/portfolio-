@@ -5,19 +5,19 @@ import { Progress } from "@/components/ui/progress";
 import type { Language, Skill } from "@shared/types";
 
 const languages: Language[] = [
-  { name: "Arabic", percentage: 100 },
-  { name: "English", percentage: 90 },
+  { name: "Arabic (Fluent)", percentage: 100 },
+  { name: "English (Conversational)", percentage: 85 },
 ];
 
 const skills: Skill[] = [
-  { name: "HTML5", percentage: 90 },
-  { name: "CSS3 / Tailwind CSS", percentage: 90 },
-  { name: "JavaScript (ES6+)", percentage: 85 },
+  { name: "HTML5", percentage: 100 },
+  { name: "CSS3 / Tailwind CSS", percentage: 100 },
+  { name: "JavaScript (ES6+)", percentage: 100 },
   { name: "React.js", percentage: 85 },
   { name: "Next.js", percentage: 75 },
   { name: "Node.js", percentage: 80 },
   { name: "Express.js", percentage: 80 },
-  { name: "MongoDB", percentage: 75 },
+  { name: "MongoDB", percentage: 100 },
   { name: "PostgreSQL", percentage: 70 },
 ];
 
@@ -34,7 +34,7 @@ const socialLinks = [
   { icon: Facebook, label: "Facebook", href: "#" },
   { icon: Instagram, label: "Instagram", href: "#" },
   { icon: Twitter, label: "Twitter", href: "#" },
-  { icon: Linkedin, label: "LinkedIn", href: "#" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/shifa-osman/" },
   { icon: Youtube, label: "YouTube", href: "#" },
   { icon: Dribbble, label: "Dribbble", href: "#" },
 ];
@@ -47,7 +47,7 @@ export function Sidebar() {
         <div className="relative">
           <Avatar className="w-24 h-24 border-4 border-primary/20">
             <AvatarImage src="" alt="Shifa Osman Musa" />
-            <AvatarFallback className="bg-primary/10 text-primary text-2xl font-bold">
+            <AvatarFallback className="bg-primary text-primary-foreground text-2xl font-bold">
               SM
             </AvatarFallback>
           </Avatar>
@@ -75,7 +75,15 @@ export function Sidebar() {
       </div>
 
       {/* Download CV Button - Visible at top without scrolling */}
-      <Button className="w-full rounded-full gap-2" data-testid="button-download-cv">
+      <Button
+        type="button"
+        className="w-full rounded-full gap-2"
+        data-testid="button-download-cv"
+        onClick={async () => {
+          const { downloadCvPdf } = await import("@/lib/cvPdf");
+          downloadCvPdf();
+        }}
+      >
         <Download className="w-4 h-4" />
         Download CV
       </Button>
@@ -83,16 +91,12 @@ export function Sidebar() {
       {/* Quick Facts */}
       <div className="space-y-3 text-sm border-t border-border pt-4">
         <div className="flex justify-between">
-          <span className="text-muted-foreground">Age:</span>
-          <span className="font-medium" data-testid="text-age">20</span>
-        </div>
-        <div className="flex justify-between">
           <span className="text-muted-foreground">Residence:</span>
           <span className="font-medium" data-testid="text-residence">Somalia</span>
         </div>
         <div className="flex justify-between">
           <span className="text-muted-foreground">Freelance:</span>
-          <span className="font-medium text-green-600" data-testid="text-freelance">Available (Remote / Part-time)</span>
+          <span className="font-medium text-green-600" data-testid="text-freelance">Available (Remote)</span>
         </div>
       </div>
 

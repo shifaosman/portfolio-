@@ -2,7 +2,6 @@ import { Sidebar } from "@/components/portfolio/Sidebar";
 import { SideNav } from "@/components/portfolio/SideNav";
 import { HeroSection } from "@/components/portfolio/HeroSection";
 import { ServicesSection } from "@/components/portfolio/ServicesSection";
-import { PricingSection } from "@/components/portfolio/PricingSection";
 import { TestimonialsSection } from "@/components/portfolio/TestimonialsSection";
 import { WorkHistorySection } from "@/components/portfolio/WorkHistorySection";
 import { EducationSection } from "@/components/portfolio/EducationSection";
@@ -24,7 +23,6 @@ export default function Portfolio() {
           <div className="bg-card rounded-2xl shadow-lg p-6 lg:p-10">
             <HeroSection />
             <ServicesSection />
-            <PricingSection />
             <TestimonialsSection />
             <WorkHistorySection />
             <EducationSection />

@@ -81,6 +81,19 @@ export default {
           busy: "rgb(239 68 68)",
           offline: "rgb(156 163 175)",
         },
+        /** Named palette — use with white/slate utilities for typography and glass */
+        token: {
+          bg: "#0B0F14",
+          surface: "#111827",
+          panel: "#161E2C",
+          accent: "#1EE3CF",
+          violet: "#8B7CFF",
+          amber: "#F3B34D",
+        },
+      },
+      boxShadow: {
+        "glow-accent": "var(--shadow-glow-accent)",
+        "glow-violet": "var(--shadow-glow-violet)",
       },
       fontFamily: {
         sans: ["var(--font-sans)"],

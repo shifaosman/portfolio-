@@ -5,27 +5,21 @@ import type { Job } from "@shared/types";
 const jobs: Job[] = [
   {
     id: "1",
-    title: "Remote Software Developer",
-    subtitle: "Part-Time",
-    dateRange: "2025 - Present",
-    certificate: "AI & Software Projects",
-    description: "Working on AI and software-related projects with international teams. Building modern web applications using React, Node.js, and cloud technologies.",
+    title: "Software Developer",
+    subtitle: "Tabarak Solutions",
+    dateRange: "~1.5 years (6 mo internship + 1 yr employee)",
+    certificate: "Internship → full-time",
+    description:
+      "Professional experience spanning a six-month internship and one year as an employee. Contributed to software delivery, backend and frontend work, and collaboration within the team.",
   },
   {
     id: "2",
-    title: "Parcel Management System",
-    subtitle: "Backend Developer",
-    dateRange: "2024 - 2025",
-    certificate: "Backend & Database",
-    description: "Designed database structure, implemented RESTful APIs, and built authentication systems using Node.js, Express, and MongoDB for a logistics management platform.",
-  },
-  {
-    id: "3",
     title: "Academic & Personal Projects",
     subtitle: "Full-Stack Developer",
     dateRange: "2022 - 2024",
     certificate: "Various Projects",
-    description: "Online Banking System (C#), Quiz Web Application (React/Node.js), E-commerce platforms, and multiple portfolio projects demonstrating full-stack capabilities.",
+    description:
+      "Online Banking System (C#), Quiz Web Application (React/Node.js), content-sharing platform, and other portfolio work demonstrating full-stack capabilities.",
   },
 ];
 

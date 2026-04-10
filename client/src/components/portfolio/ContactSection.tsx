@@ -19,14 +19,14 @@ const contactCards = [
   {
     id: "2",
     icon: Mail,
-    title: "Email",
-    details: ["shifaosman264@gmail.com"],
+    title: "Email & Phone",
+    details: ["shifaosman842@gmail.com", "+252 618 036029"],
   },
   {
     id: "3",
     icon: Briefcase,
     title: "Connect",
-    details: ["GitHub: github.com/shifaosman", "LinkedIn: linkedin.com/in/shifaosman"],
+    details: ["GitHub: github.com/shifaosman", "LinkedIn: linkedin.com/in/shifa-osman"],
   },
 ];
 
@@ -230,7 +230,7 @@ export function ContactSection() {
                 <Github className="w-5 h-5" />
               </a>
               <a 
-                href="https://linkedin.com/in/shifaosman"
+                href="https://www.linkedin.com/in/shifa-osman/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-card border border-border flex items-center justify-center text-muted-foreground hover-elevate"

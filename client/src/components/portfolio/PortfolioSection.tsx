@@ -19,8 +19,8 @@ const portfolioItems: PortfolioItem[] = [
   },
   {
     id: "3",
-    title: "Parcel Management",
-    category: "backend",
+    title: "Content Sharing Platform",
+    category: "mern",
     image: "",
   },
   {

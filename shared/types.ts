@@ -6,16 +6,6 @@ export interface Service {
   hasOrder?: boolean;
 }
 
-export interface PricingPlan {
-  id: string;
-  name: string;
-  price: number;
-  period: string;
-  description: string;
-  features: { text: string; included: boolean }[];
-  isPopular?: boolean;
-}
-
 export interface Testimonial {
   id: string;
   name: string;
