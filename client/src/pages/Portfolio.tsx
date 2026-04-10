@@ -32,7 +32,8 @@ export default function Portfolio() {
             
             {/* Footer */}
             <footer className="pt-16 pb-8 text-center border-t border-border mt-16">
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm font-medium text-foreground">Shifa Osman Portfolio</p>
+              <p className="text-sm text-muted-foreground mt-1">
                 © {new Date().getFullYear()} Shifa Osman Musa. All rights reserved.
               </p>
               <p className="text-xs text-muted-foreground mt-2">
